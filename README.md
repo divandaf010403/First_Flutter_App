@@ -16,7 +16,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## 1. Profile Page
-![flutter2](https://user-images.githubusercontent.com/79875129/198883391-15188a1e-0ce8-458b-82ab-0869772b7651.jpg)
+![flutter2](https://user-images.githubusercontent.com/79875129/198883391-15188a1e-0ce8-458b-82ab-0869772b7651.jpg | widht = 100)
 
 ## 2. SideBar
 ![flutter3](https://user-images.githubusercontent.com/79875129/198883479-7b646af5-6d17-4973-922b-2181ad0e5cb2.jpg)
