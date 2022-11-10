@@ -4,16 +4,16 @@ A new Flutter project 1
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- Nama : Divanda Firdaus
+- Kelas : IK2B
+- No. Absen : 09
+- NIM : 3.34.21.1.09
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Materi : 
+- Membuat Profile Mahasiswa
+- Membuat Antarmuka Objek Wisata
+- Membuat List Tempat Wisata
+- Membuat Navigation and Route
 
 ## 1. Profile Page
 ![flutter2](https://user-images.githubusercontent.com/79875129/198883391-15188a1e-0ce8-458b-82ab-0869772b7651.jpg)
