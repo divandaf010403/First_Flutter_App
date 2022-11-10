@@ -1,7 +1,9 @@
 import 'package:application1/myProfile.dart';
 import 'package:application1/wisata.dart';
+import 'package:application1/ListWisata/wisataSemarang.dart';
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
+import 'package:application1/NavigationRouting/FirstScreen.dart';
 
 class NavBar extends StatefulWidget {
 
@@ -34,6 +36,20 @@ class _NavBarState extends State<NavBar> {
         selectedStyle: textStyle,
       ),
         wisata(),
+      ),
+      ScreenHiddenDrawer(ItemHiddenMenu(
+        name: "Wisata Di Semarang",
+        baseStyle: textStyle,
+        selectedStyle: textStyle,
+      ),
+        wisataSemarang(),
+      ),
+      ScreenHiddenDrawer(ItemHiddenMenu(
+        name: "Navigation Routing",
+        baseStyle: textStyle,
+        selectedStyle: textStyle,
+      ),
+        FirstScreen(),
       ),
     ];
   }
