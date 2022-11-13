@@ -1,3 +1,4 @@
+import 'package:application1/PolinesNews/article.dart';
 import 'package:flutter/material.dart';
 import 'package:application1/NavBar.dart';
 import 'package:application1/NavigationRouting/FirstScreen.dart';
@@ -6,6 +7,9 @@ import 'package:application1/NavigationRouting/SecondScreenWithData.dart';
 import 'package:application1/NavigationRouting/ReturnDataScreen.dart';
 import 'package:application1/NavigationRouting/ReplacementScreen.dart';
 import 'package:application1/NavigationRouting/AnotherScreen.dart';
+import 'package:application1/PolinesNews/NewsListPage.dart';
+import 'package:application1/PolinesNews/NewsDetailPage.dart';
+import 'package:application1/PolinesNews/NewsWebView.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,10 +26,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: myProfile(),
       home: NavBar(),
-      initialRoute: '/',
+      initialRoute: NewsListPage.routeName,
       routes: {
         '/firstScreen' : (context) => FirstScreen(),
         '/secondScreen' : (context) => SecondScreen(),
@@ -34,6 +38,11 @@ class MyApp extends StatelessWidget {
         '/returnDataScreen' : (context) => ReturnDataScreen(),
         '/replacementScreen' : (context) => ReplacementScreen(),
         '/anotherScreen' : (context) => AnotherScreen(),
+        NewsListPage.routeName : (context) => NewsListPage(),
+        NewsDetailPage.routeName : (context) => NewsDetailPage(
+          article: ModalRoute.of(context)?.settings.arguments as Article,
+        ),
+        NewsWebView.routeName : (context) => NewsWebView(url: ModalRoute.of(context)?.settings.arguments as String),
       },
     );
   }
